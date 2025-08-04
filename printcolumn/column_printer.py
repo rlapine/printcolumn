@@ -139,18 +139,22 @@ class ColumnPrinter:
             None
         """
         # Fallback to class-level defaults if not provided
+        
         col_widths = col_widths or self.col_widths[:]
         col_text_colors = col_text_colors or self.col_text_colors[:]
         col_back_colors = col_back_colors or self.col_back_colors[:]
         col_bold = col_bold or self.col_bold[:]
         col_italic = col_italic or self.col_italic[:]
-        col_divider_char = col_divider_char or self.col_divider_char
-        row_divider_char = row_divider_char or self.row_divider_char
+        if col_divider_char is None:
+            col_divider_char = self.col_divider_char[:]
+        if row_divider_char is None:
+            row_divider_char = self.row_divider_char[:]
+        
         width = width or self.width
         bold = bold if bold is not None else self.bold
         italic = italic if italic is not None else self.italic
-        text_color = (text_color or self.text_color).replace(' ', '')
-        back_color = (back_color or self.back_color).replace(' ', '')
+        text_color = (text_color or self.text_color[:]).replace(' ', '')
+        back_color = (back_color or self.back_color[:]).replace(' ', '')
 
         # Normalize inputs to lists
         col_widths = [col_widths] if isinstance(col_widths, int) else col_widths
@@ -298,42 +302,12 @@ class ColumnPrinter:
         Returns:
             None
         """
+        
         if row_divider_char == self.CARRIAGE_RETURN:
             print()
-        else:
+        elif len(row_divider_char) > 0:
             # print 
             divider = (row_divider_char * math.ceil(row_length / len(row_divider_char)))[:row_length]
             print(divider)
                 
 
-def main():
-    col_count = int(input("How many columns do you want?:"))
-    col_text =[]
-    col_widths = []
-    col_text_colors = []
-    col_back_colors = []
-    col_bold = []
-    col_italic = []
-    reset = False
-    for i in range(col_count):
-        print(f"Enter values for column {i + 1}")
-        col_text.append(input(f"\tEnter text for column {i + 1}:"))
-        col_widths.append(int(input(f"\tEnter width of column {i+1}:")))
-        col_text_colors.append(input(f"\tEnter text color for column {i + 1}:"))
-        col_back_colors.append(input(f"\tEnter background color for column {i + 1}:"))
-        col_bold.append(input(f"\tBold column {i + 1}? (y/n):").strip().lower()=='y')
-        col_italic.append(input(f"\tItalic column {i + 1}? (y/n):").strip().lower()=='y')
-    div_char = input("Enter a char to divide the columns:")
-    row_div_char = input("Enter a char to divide rows:")
-    
-    ColumnPrinter().print_column_row(*col_text,
-                                     col_widths = col_widths,
-                                     col_text_colors=col_text_colors,
-                                     col_back_colors=col_back_colors,
-                                     col_bold=col_bold,
-                                     col_italic=col_italic)
-    print()
-    
-
-if __name__ == "__main__":
-    main()

@@ -2,7 +2,7 @@
 PrintColumn: A module for printing formatted columns to the console.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.11"
 
 from .core import (
     initialize_column_printer,

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="columnprint",
-    version="0.1.0",
+    version="0.11",
     packages=find_packages(),  # Auto-discovers the 'printpop' folder
     install_requires=[
         "printpop>=0.2.0", 

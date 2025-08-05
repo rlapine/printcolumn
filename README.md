@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rlapine/printcolumn/refs/heads/main/assets/print_pop_logo.png" alt="PrintColumn logo" width="400"/>
+  <img src="https://github.com/rlapine/printcolumn/blob/main/assets/print_column_logo.png?raw=true" alt="PrintColumn logo" width="400"/>
 </p>
 
 ---
@@ -110,7 +110,7 @@ ColumnPrinter().print_column_row(
 ```
 
 <p align="left">
-  <img src="https://raw.githubusercontent.com/rlapine/printpop/refs/heads/main/assets/colorprinter_usage_output.png" alt="console output" width="800"/>
+  <img src="https://github.com/rlapine/printcolumn/blob/main/assets/colorprinter_usage_output.png?raw=true" alt="console output" width="800"/>
 </p>
 
 ---

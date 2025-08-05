@@ -5,7 +5,7 @@ setup(
     version="0.1.0",
     packages=find_packages(),  # Auto-discovers the 'printpop' folder
     install_requires=[
-        "printpop>=0.1.9", 
+        "printpop>=0.2.0", 
     ],
     entry_points={
         "console_scripts": [

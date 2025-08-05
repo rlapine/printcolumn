@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rlapine/printpop/refs/heads/main/assets/print_pop_logo.png" alt="PrintPop logo" width="400"/>
+  <img src="https://raw.githubusercontent.com/rlapine/printcolumn/refs/heads/main/assets/print_pop_logo.png" alt="PrintColumn logo" width="400"/>
 </p>
 
 ---
@@ -12,8 +12,8 @@ A lightweight Python utility for printing styled, wrapped columns to the console
 
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/rlapine/printpop?style=social)](https://github.com/rlapine/printcolumn/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/rlapine/printpop?style=social)](https://github.com/rlapine/printcolumn/network/members)
+[![GitHub Stars](https://img.shields.io/github/stars/rlapine/printcolumn?style=social)](https://github.com/rlapine/printcolumn/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/rlapine/printcolumn?style=social)](https://github.com/rlapine/printcolumn/network/members)
 
 ---
 

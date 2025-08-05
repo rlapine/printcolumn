@@ -1,3 +1,7 @@
 from printcolumn import print_column_row
+from printcolumn import get_colors
+from printcolumn import main
 
-print_column_row("Hello", text_color="red")
+
+
+main()

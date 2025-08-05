@@ -2,7 +2,7 @@
 
 # PrintColumn
 # Author: Ryan LaPine
-# Version: 1.0
+# Version: 0.1.1
 # Date: 2025-08-02
 
 """

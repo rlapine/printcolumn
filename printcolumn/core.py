@@ -13,7 +13,7 @@ Use individual print_* functions for simple formatting, or print_column_row() fo
 Create reusable, styled print calls for terminal output, logs, or CLI utilities.
 
 Author: Ryan LaPine
-Version: 0.11
+Version: 0.1.1
 Date: 2025-08-03
 """
 
